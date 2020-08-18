@@ -87,7 +87,7 @@ function calculate(x, y) {
             body.innerHTML = `<div class="winner"><h1>You won!</h1></div>`;
         }
         else{
-            body.innerHTML = `<div class="winner"><h1>You won!</h1></div>`;
+            body.innerHTML = `<div class="winner"><h1>Sorry, Computer won!</h1></div>`;
         }
     }
     console.log("computer code: " + y + " computer: " + c);
