@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    height: 100vh;
+    background-image: linear-gradient(360deg, black, white);
+    width: 100%;
+}
+
+.score{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 30%;
+}
+#playerScore{
+    display: flex;
+    flex-direction: column;
+}
+#playerScore p, #computerScore p{
+    text-align: center;
+    margin: 10px;
+}
+.game{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40%;
+}
+#playerImage{
+    transform: rotateY(180deg);
+}
+.gameOptions{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#rock, #paper, #scissors {
+    width: 150px;
+    height: 30px;
+    background: rgb(36, 36, 119);
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+.remove{
+    display: none;
+}
+.winner{
+    height: 100vh;
+    width: 100%;
+    background: black;
+    color: white;
+}
+.winner h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    transform: all 1s ease;
+}
